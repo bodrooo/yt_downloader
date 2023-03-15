@@ -5,14 +5,14 @@ path = "/storage/emulated/0/YT Downloader"
 
 def yt_video():
 		yt_vid = yt(url).streams.get_highest_resolution()
-		print("Downloading......,,,,,")
+		print("Downloading......")
 		yt_vid.download(output_path=path)
 		print("Download Video Sucessfully\nPath:",path)
 	
 	
 def yt_audio():
 		yt_aud = yt(url).streams.filter(only_audio=True).first()
-		print("Downloading.....,,,,")
+		print("Downloading.....")
 		dwn = yt_aud.download(output_path=path)
 		base, ext = os.path.splitext(dwn)
 		new_name = base + '.mp3'
