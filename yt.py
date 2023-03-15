@@ -9,7 +9,6 @@ def yt_video():
 		yt_vid.download(output_path=path)
 		print("Download Video Sucessfully\nPath:",path)
 	
-	
 def yt_audio():
 		yt_aud = yt(url).streams.filter(only_audio=True).first()
 		print("Downloading.....")
