@@ -1,7 +1,6 @@
 from pytube import YouTube as yt
 import os
 
-
 path = "/storage/emulated/0/YT Downloader"
 
 def yt_video():
